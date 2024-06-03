@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contri Meter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://media.istockphoto.com/id/1225609127/vector/growing-business-concept.jpg?s=612x612&w=0&k=20&c=RWDV5WgdK55I-9KB9xWBWs770pWE3qCGK34ZCvB1uG8="
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Contri Meter</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="download-app">
+            <a
+              href="https://drive.google.com/file/d/1v4HTm7ErrgqWVjOEQjBZxQ-H6NwjS3Nl/view?usp=drive_link"
+            >
+              App
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <form id="expenseForm">
+        <input
+          type="text"
+          id="expenseName"
+          placeholder="Expense Name"
+          required
+        />
+        <input
+          type="number"
+          id="expenseAmount"
+          placeholder="Amount (&#8377;)"
+          required
+        />
+        <input
+          type="text"
+          id="contributor"
+          placeholder="Contributor"
+          required
+        />
+        <input type="submit" value="Add Expense" />
+      </form>
+      <div id="expenses">
+        <table id="expenseTable">
+          <thead>
+            <tr>
+              <th>Expense</th>
+              <th>Amount (&#8377;)</th>
+              <th>Contributor</th>
+            </tr>
+          </thead>
+          <tbody id="expenseBody"></tbody>
+        </table>
+      </div>
+      <div id="totalExpense"></div>
+      <div id="settlement"></div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Asim Kumar Hansda. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

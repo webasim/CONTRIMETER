@@ -1,0 +1,321 @@
+/* Your CSS styles */
+/* -------------------------------------- */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f8fa; /* GitHub background */
+  color: #24292e; /* GitHub text color */
+}
+
+/* Header styling */
+/* -------------------------------------- */
+
+header {
+  background-color: #24292e; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 15px; /* Reduced padding */
+  text-align: center; /* Center align the content */
+  position: fixed; /* Fixed position */
+  width: 100%; /* Full width */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center align vertically */
+}
+
+/* Logo styling */
+header h1 {
+  font-size: 24px; /* Decreased font size */
+  margin: 0; /* Remove margin */
+  font-weight: bold; /* Make the font bold */
+}
+
+/* Navigation container styling */
+.nav-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align vertically */
+}
+
+/* Navigation styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: -10px; /* Adjusted left margin */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px; /* Added margin to the right */
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 20px; /* Maintain spacing between menu items */
+}
+
+nav ul li a {
+  color: #ffffff; /* Set text color to white */
+  text-decoration: none;
+  font-size: 18px; /* Increase font size */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+/* Download App button styling */
+.download-app {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 10px; /* Reduced padding */
+  background-color: #218838; /* Green color for button background */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+  margin-left: 10px; /* Reduced spacing */
+}
+
+.download-app:hover {
+  background-color: #1e7e34; /* Darker green on hover */
+}
+
+/* Container styling */
+.container {
+  max-width: 90%; /* Adjusted max-width for smaller screens */
+  margin: 100px auto; /* Increased space between top of container and header */
+  padding: 15px; /* Reduced padding */
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* GitHub box shadow */
+  background-color: #fff;
+  text-align: center; /* Center align the content within the container */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px; /* Reduced margin */
+  text-align: center; /* Center align the content within the table */
+}
+
+table,
+th,
+td {
+  border: 1px solid #e1e4e8; /* GitHub table border color */
+  padding: 8px; /* Reduced padding */
+}
+
+th {
+  background-color: #f6f8fa; /* GitHub table header background */
+  color: #24292e; /* GitHub text color */
+}
+
+/* Form styling */
+form {
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 8px; /* Reduced margin */
+  border: 1px solid #e1e4e8; /* GitHub input border color */
+  border-radius: 6px;
+}
+
+input[type="submit"] {
+  background-color: #28a745; /* GitHub green button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px; /* Adjusted padding */
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838; /* GitHub hover green button */
+}
+
+/* Total expense */
+#totalExpense {
+  text-align: center;
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+/* Settlement */
+#settlement {
+  padding: 15px; /* Reduced padding */
+  border-radius: 6px;
+  background-color: #f6f8fa; /* GitHub settlement background */
+  text-align: center; /* Center align the content within the settlement */
+  margin-top: 15px; /* Reduced margin */
+}
+
+#settlement table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center; /* Center align the content within the settlement table */
+}
+
+#settlement th,
+#settlement td {
+  border: 1px solid #e1e4e8; /* GitHub table border color */
+  padding: 8px; /* Reduced padding */
+}
+
+#settlement th {
+  background-color: #f6f8fa; /* GitHub table header background */
+  color: #24292e; /* GitHub text color */
+}
+
+/* Footer styling */
+footer {
+  background-color: #24292e; /* GitHub footer background color */
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%; /* Full width */
+  position: fixed; /* Fixed position at the bottom */
+  bottom: 0; /* Stick to the bottom */
+  left: 0; /* Align to the left */
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 80px; /* Adjusted margin-top for smaller screens */
+    margin-bottom: 80px; /* Adjusted margin-bottom for smaller screens */
+  }
+
+  nav ul {
+    margin-left: 5px; /* Adjusted margin to move items slightly to the left */
+  }
+
+  nav ul li:not(:last-child) {
+    margin-right: 10px; /* Further reduced spacing between menu items */
+  }
+
+  nav ul li a {
+    font-size: 14px; /* Decreased font size */
+  }
+
+  .download-app {
+    padding: 6px 12px; /* Further reduced padding */
+    margin-left: 10px; /* Reduced spacing */
+  }
+
+  table {
+    font-size: 14px; /* Decreased font size for tables on smaller screens */
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="submit"] {
+    padding: 6px; /* Reduced padding */
+    width: calc(100% - 16px); /* Adjusted width for smaller screens */
+    margin-bottom: 6px; /* Further reduced margin */
+  }
+}
+
+/* Social icons */
+.social-icons .icon {
+  display: inline-block;
+  width: 40px; /* Decreased width */
+  height: 40px; /* Decreased height */
+  margin-right: 10px;
+  background-size: contain;
+}
+.social-icons .whatsapp {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png");
+}
+
+.social-icons .instagram {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png");
+}
+
+.social-icons .linkedin {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png");
+}
+.social-icons .twitter {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Twitter_box.jpg");
+}
+.social-icons .github {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png");
+}
+
+/* Left corner styling */
+.left-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+/* Styles for desktop */
+/* Add your existing CSS styles here */
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+  /* Adjust header */
+  .header-nav {
+    padding: 10px; /* Reduce padding */
+  }
+
+  /* Adjust navigation links */
+  .nav-links li {
+    margin-right: 10px; /* Reduce margin */
+  }
+
+  /* Adjust container */
+  .container {
+    padding: 20px; /* Add padding */
+  }
+}
+
+/* Styles for smartphones */
+@media (max-width: 576px) {
+  /* Adjust header */
+  .header-nav {
+    padding: 5px; /* Reduce padding */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  /* Adjust navigation links */
+  .nav-links {
+    display: none; /* Hide navigation links */
+  }
+
+  /* Show hamburger menu icon */
+  .menu-icon {
+    display: block; /* Show hamburger menu icon */
+  }
+
+  /* Adjust container */
+  .container {
+    padding: 10px; /* Add padding */
+  }
+
+  /* Display "Download App" link in the center */
+  .nav-links li.download-app {
+    display: block;
+    margin-top: 10px; /* Add margin to separate from other links */
+  }
+}
+
+/* Styles for hamburger menu icon */
+.menu-icon {
+  display: none; /* Initially hide hamburger menu icon */
+  cursor: pointer;
+}
